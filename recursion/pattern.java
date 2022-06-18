@@ -6,7 +6,8 @@ public class pattern {
     public static void main(String[] args) {
       //  patt(0, 4);
       int[] nums = {5,4,3,2,1};
-      bubbleSort(nums, 0, 5);
+     // bubbleSort(nums, 0, 5);
+     selectionSort(nums, 0, 5, Integer.MAX_VALUE);
       System.out.println(Arrays.toString(nums));
     }
     static void patt(int r, int c){
@@ -43,6 +44,31 @@ public class pattern {
             bubbleSort(nums, ++s, l); 
         }
        
+
+
+    }
+
+    static void selectionSort(int[] nums, int s, int l, int min){
+
+        if(l == 1) return;
+        
+        if(s == nums.length) {
+            s = s-l+1;
+            min = nums[s];
+            selectionSort(nums, s, --l, min);
+        }
+        else{
+            if(nums[s] < min){
+                min = nums[s];
+                int temp = nums[nums.length - l];
+                nums[nums.length - l] = min;
+                nums[s] = temp;
+            }
+            selectionSort(nums, ++s, l, min);
+        }
+
+        
+
 
 
     }
