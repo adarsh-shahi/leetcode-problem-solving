@@ -4,19 +4,19 @@ public class basic {
 
     public static void main(String[] args) {
 
-        System.out.println(solve("adarsh", 0));
+        System.out.println(solve("adarsh"));
         
     }
 
-    static String solve(String word, int p){
+    static String solve(String word){
 
         String ans = "";
 
-        if(p == word.length()) return "";
+        if(word.length() == 0) return "";
 
-        if(word.charAt(p) != 'a') ans += word.charAt(p); 
+        if(word.charAt(0) != 'a') ans += word.charAt(0); 
 
-        return ans += solve(word, ++p);
+        return ans += solve(word.substring(1));
 
 
     }
