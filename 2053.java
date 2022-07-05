@@ -5,19 +5,18 @@ class solve {
     }
 
     private static String solve(String[] arr, int k){
-      int[] counts = new int[arr.length];
-      for(int i = 0; i < arr.length; ++i){
-        int count = 0;
-        for (int j = 0; j < arr.length; j++) {
-          if(arr[i].equals(arr[j])) count++;
-        }
-        counts[i] = count;
-      }
+      Map<String,Integer> map=new HashMap<>();
+      for(String s:arr){
+            
+        if(map.containsKey(s)) map.put(s,map.get(s)+1);
+        else map.put(s,1);
+    }
+    System.out.println(map);
 
       int c = 0;
-      for (int i = 0; i < counts.length; i++) {
-        if(counts[i] == 1) c++;
-        if(c == k) return arr[i];
+      for (String word: arr) {
+        if(map.get(word) == 1) c++;
+        if(c == k) return word;
       }
       return "";
     }
