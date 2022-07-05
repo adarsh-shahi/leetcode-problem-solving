@@ -1,36 +1,23 @@
 import java.util.*;
 class solve {
     public static void main(String[] args) {
-        System.out.println(solve(new String[] {"aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa","aaaaa"}, 416));
+        System.out.println(solve(new String[] {"d","b","c","b","c","a"}, 2));
     }
 
     private static String solve(String[] arr, int k){
-      String[] similarItems = new String[1000];
-      int p = 0;
-      for (int i = 0; i < arr.length - 1; i++) {
-        
-        for (int j = i + 1; j < arr.length; j++) {
-          if(arr[i].equals(arr[j])){
-            similarItems[p++] = arr[i];
-          }
+      int[] counts = new int[arr.length];
+      for(int i = 0; i < arr.length; ++i){
+        int count = 0;
+        for (int j = 0; j < arr.length; j++) {
+          if(arr[i].equals(arr[j])) count++;
         }
+        counts[i] = count;
       }
 
-      String[] distinct = new String[arr.length];
-      int s = 0;
-      boolean flag = true;
-      for(int i = 0; i < arr.length; ++i){
-        flag = true;
-        for (int j = 0; j < similarItems.length; j++) {
-          if(arr[i].equals(similarItems[j])) {
-            flag = false;
-            break;
-          }
-        }
-        if(flag) 
-          distinct[s++] = arr[i];
-        if(s == k) 
-          return distinct[s - 1]; 
+      int c = 0;
+      for (int i = 0; i < counts.length; i++) {
+        if(counts[i] == 1) c++;
+        if(c == k) return arr[i];
       }
       return "";
     }
