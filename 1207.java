@@ -19,5 +19,26 @@ class solve {
 
      return true;
     }
+
+    // O(n)
+    static boolean solve2(int[] arr){
+      Map<Integer, Integer> freqMap = new HashMap<>();    // maps element in arr to number of occurrences in arr
+    for (int currInt : arr) {
+        freqMap.put(currInt, freqMap.getOrDefault(currInt, 0) + 1);
+    }
+    
+    // check whether all values in the map are unique
+    Set<Integer> seen = new HashSet<>();
+    for (int currValue : freqMap.values()) {
+        if (seen.contains(currValue)) {
+            return false;     // terminate as soon as a duplicate is detected
+            
+        } else {
+            seen.add(currValue);
+        }
+    }
+    
+    return true;
+    }
     
 }
