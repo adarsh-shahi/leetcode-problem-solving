@@ -29,15 +29,17 @@ class solve {
       }
     }
     for (int i = 0; i < ans.size(); i++) {
+      boolean isSorted = true;
       for (int j = 0; j < ans.size() - 1 - i; j++) {
         if(ans.get(j).get(0) > ans.get(j + 1).get(0)){
+          isSorted = false;
           List<Integer> temp = ans.get(j);
           ans.set(j, ans.get(j + 1));
           ans.set(j + 1, temp);
         }
       }
+      if(isSorted) return ans;
     }
     return ans;
   }
-
 }
