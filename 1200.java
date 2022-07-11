@@ -16,13 +16,8 @@ class solve {
       }
       if (minDiff == Math.abs(arr[i] - arr[i + 1])) {
         List<Integer> point = new ArrayList<>();
-        if (arr[i] > arr[i + 1]) {
-          point.add(arr[i + 1]);
-          point.add(arr[i]);
-        } else {
-          point.add(arr[i]);
-          point.add(arr[i + 1]);
-        }
+        point.add(arr[i]);
+        point.add(arr[i + 1]);
         ans.add(point);
       }
     }
