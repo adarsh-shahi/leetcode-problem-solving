@@ -17,9 +17,7 @@ class solve {
           nas[l] = nums[j];
           l-=2;
         }
-        
       }
      return nas;
     }
-    
 }
