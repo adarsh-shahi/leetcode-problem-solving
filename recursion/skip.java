@@ -1,7 +1,7 @@
 import java.util.*;
 class solve {
     public static void main(String[] args) {
-        System.out.println(skipString("isapplegood"));
+        System.out.println(skipAppNotApple("isappgood"));
     }
 
     private static String skipChar(String s){
@@ -17,6 +17,13 @@ class solve {
       if(s.startsWith("apple"))
        return skipString(s.substring(5));
       return s.charAt(0) + skipString(s.substring(1));  
+    }
+
+    static String skipAppNotApple(String s){
+      if(s.isEmpty()) return "";
+      if(s.startsWith("app") && !s.startsWith("apple"))
+       return skipAppNotApple(s.substring(3));
+      return s.charAt(0) + skipAppNotApple(s.substring(1));  
     }
     
 }
