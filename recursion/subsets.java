@@ -5,8 +5,18 @@ import java.util.ArrayList;
 public class subsets {
 
     public static void main(String[] args) {
-        System.out.println((solve("car", "")));
+        subsets("", "car");
     }
+
+    static void subsets(String p, String up){
+        if(up.isEmpty()){
+            System.out.println(p);
+            return;
+        }
+        subsets(p + up.charAt(0), up.substring(1));
+        subsets(p, up.substring(1));
+    }
+
 
     static ArrayList<String> solve(String word, String ans){
        
@@ -19,7 +29,7 @@ public class subsets {
         ArrayList<String> left =solve(word.substring(1),ans + ch); 
         ArrayList<String> right = solve(word.substring(1),ans);
         left.addAll(right);
-		return left;
+		return left; 
     }
     
 }
