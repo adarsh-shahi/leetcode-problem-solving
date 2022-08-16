@@ -2,8 +2,20 @@ import java.util.*;
 class solve {
     public static void main(String[] args) {
         // solve("","abc");
-        System.out.println(solve2("", "car"));
+        System.out.println(solve3("", "car"));
     }
+
+    private static int solve3(String p, String up){
+      if(up.isEmpty()){
+          return 1;
+      }
+      char f = up.charAt(0);
+      int sum = 0;
+      for (int i = 0; i <= p.length(); i++) {
+        sum += solve3(p.substring(0,i) + f + p.substring(i), up.substring(1));
+      }
+      return sum;
+  }
 
     private static ArrayList<String> solve2(String p, String up){
       if(up.isEmpty()){
