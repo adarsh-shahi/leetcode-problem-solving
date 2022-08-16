@@ -6,13 +6,10 @@ class solve {
     }
 
     private static int solve3(String p, String up){
-      if(up.isEmpty()){
-          return 1;
-      }
-      char f = up.charAt(0);
+      if(up.isEmpty()) return 1;
       int sum = 0;
       for (int i = 0; i <= p.length(); i++) {
-        sum += solve3(p.substring(0,i) + f + p.substring(i), up.substring(1));
+        sum += solve3(p.substring(0,i) + up.charAt(0) + p.substring(i), up.substring(1));
       }
       return sum;
   }
