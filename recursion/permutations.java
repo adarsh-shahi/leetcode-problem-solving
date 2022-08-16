@@ -25,6 +25,7 @@ class solve {
       for (int i = 0; i <= p.length(); i++) {
         ArrayList<String> l = solve2(p.substring(0,i) + f + p.substring(i), up.substring(1));
         fl.addAll(l);
+        // fl.addAll(solve2(p.substring(0,i) + f + p.substring(i), up.substring(1)));
       }
       return fl;
   }
