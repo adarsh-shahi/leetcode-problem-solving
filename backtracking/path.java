@@ -5,13 +5,31 @@ import java.util.Arrays;
 
 class solve{
   public static void main(String[] args) {
-     System.out.println(solve3("",0,0));
+    boolean[][] maze = {
+      {true, true, true},
+      {true, false, true},
+      {true, true, true}
+    };
+     System.out.println(solve4(maze, "",0,0));
   }
   /*
         ArrayList<String> list = new ArrayList<>();
         list.add(p);
         return list;
   */
+
+  static ArrayList<String> solve4(boolean[][] maze, String p, int r, int c){
+    if(c >= maze.length || r >= maze[0].length || maze[r][c] == false) return new ArrayList<>();
+  
+    if(r == maze.length - 1 && c == maze[0].length - 1 ) return new ArrayList<>(Arrays.asList(p));
+    ArrayList<String> l1 = solve4(maze, p+"R", r, c + 1);
+    ArrayList<String> l2 = solve4(maze, p+"D", r + 1, c);
+    ArrayList<String> l3 = solve4(maze, p+"X", r + 1, c + 1);
+    l1.addAll(l2);
+    l1.addAll(l3);
+    return l1;
+
+  }
   static ArrayList<String> solve3(String p, int r, int c){ // right , down and diagonal
     if(c >= 3 || r >= 3) return new ArrayList<>();
    
