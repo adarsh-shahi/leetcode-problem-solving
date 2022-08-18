@@ -7,19 +7,39 @@ class solve{
   public static void main(String[] args) {
     boolean[][] maze = {
       {true, true, true},
-      {true, false, true},
+      {true, true, true},
       {true, true, true}
     };
-     System.out.println(solve4(maze, "",0,0));
+     solve5(maze, "",0,0);
   }
   /*
         ArrayList<String> list = new ArrayList<>();
         list.add(p);
         return list;
   */
+  static void solve5(boolean[][] maze, String p, int r, int c){
+    if(c >= maze.length || r >= maze[0].length || r < 0 || c < 0 || !maze[r][c]) return;
+    
+    
+    if(r == maze.length - 1 && c == maze[0].length - 1 ){
+      System.out.println(p);
+      return;
+    }
+    maze[r][c] = false;
+    solve5(maze, p+"R", r, c + 1);
+    
+    solve5(maze, p+"D", r + 1, c);
+    
+    solve5(maze, p+"U", r - 1, c);
+   
+    solve5(maze, p+"L", r, c - 1);  
+    maze[r][c] = true;
+   
+
+  }
 
   static ArrayList<String> solve4(boolean[][] maze, String p, int r, int c){
-    if(c >= maze.length || r >= maze[0].length || maze[r][c] == false) return new ArrayList<>();
+    if(c >= maze.length || r >= maze[0].length || !maze[r][c]) return new ArrayList<>();
   
     if(r == maze.length - 1 && c == maze[0].length - 1 ) return new ArrayList<>(Arrays.asList(p));
     ArrayList<String> l1 = solve4(maze, p+"R", r, c + 1);
