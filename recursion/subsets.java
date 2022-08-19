@@ -5,16 +5,44 @@ import java.util.ArrayList;
 public class subsets {
 
     public static void main(String[] args) {
-        subsets("", "car");
+    //    System.out.println(subsets("", "car"));
+        ArrayList<Integer> b = new ArrayList<>();
+        b.add(1);
+        b.add(2);
+        b.add(3);
+        ArrayList<Integer> a = new ArrayList<>();
+
+    subsequences(a,b);
     }
 
-    static void subsets(String p, String up){
+    static ArrayList<String> subsets(String p, String up){
+        
         if(up.isEmpty()){
-            System.out.println(p);
+            ArrayList<String> list = new ArrayList<>();
+            list.add(p);
+            return list;
+        }
+        ArrayList<String> l1 = subsets(p + up.charAt(0), up.substring(1));
+        ArrayList<String> l2 = subsets(p, up.substring(1));
+        l1.addAll(l2);
+        return l1;
+    }
+
+    static void subsequences(ArrayList<Integer> a, ArrayList<Integer> b){
+        if(b.isEmpty()){
+            System.out.println(a);
             return;
         }
-        subsets(p + up.charAt(0), up.substring(1));
-        subsets(p, up.substring(1));
+        ArrayList<Integer> temp = new ArrayList<>();
+        for(int e: a) temp.add(e);
+        a.add(b.get(0));
+        ArrayList<Integer> temp2 = new ArrayList<>();
+        for(int i = 1; i < b.size(); i++){
+            temp2.add(b.get(i));
+        }
+        subsequences(a, temp2);
+        subsequences(temp, temp2);
+
     }
 
 
