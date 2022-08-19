@@ -6,7 +6,7 @@ public class basic {
 
         // System.out.println(solve("adarsh shahi"));
         // System.out.println(solve2("app a day keeps applg away"));
-        System.out.println(fibonacci(6));
+        System.out.println(fibonacci(7));
         
     }
 
@@ -34,7 +34,8 @@ public class basic {
     }
 
     static int fibonacci(int n){
-        if(n == 1 || n == 2) return 1;
+        if(n == 2 || n == 3) return 1;
+        if(n == 1) return 0;
         return fibonacci(n - 1) + fibonacci(n - 2);
      }
 
