@@ -8,8 +8,8 @@ class soolve {
   }
 
   static boolean solve1(int[] arr, int i){
-    if(i == (arr.length / 2)) return true;
-    return (arr[arr.length - i] == arr[i-1]) && solve1(arr, i - 1);
+    return (i == (arr.length / 2)) ? true : (arr[arr.length - i] == arr[i-1]) && solve1(arr, i - 1);
+    
   }
 
   static void solve (int[] arr, int i){
