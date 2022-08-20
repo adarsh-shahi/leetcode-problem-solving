@@ -12,7 +12,24 @@ public class subsets {
         b.add(3);
         ArrayList<Integer> a = new ArrayList<>();
 
-    subsequences(a,b);
+    // subsequences(a,b);
+    int[] ab = {1,2,3};
+    subsequences2(0, ab, a);
+
+    }
+
+
+    static void subsequences2(int i, int[] a, ArrayList<Integer> ans){
+        if(i == a.length){
+            System.out.println(ans);
+            return;
+        }
+        ArrayList<Integer> t = new ArrayList<>();
+        for(int e: ans) t.add(e);
+        ans.add(a[i]);
+        subsequences2(i + 1, a, ans);
+        
+        subsequences2(i + 1, a, t);
     }
 
     static ArrayList<String> subsets(String p, String up){
