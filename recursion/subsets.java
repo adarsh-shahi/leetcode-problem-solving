@@ -25,10 +25,9 @@ public class subsets {
             return;
         }
         ArrayList<Integer> t = new ArrayList<>();
-        for(int e: ans) t.add(e);
+        t.addAll(ans);
         ans.add(a[i]);
         subsequences2(i + 1, a, ans);
-        
         subsequences2(i + 1, a, t);
     }
 
