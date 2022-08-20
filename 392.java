@@ -9,13 +9,8 @@ class solve {
     }
 
     private static boolean solve(String p, String up, String s){
-      if(up.isEmpty()){
-        if(s.equals(p)) return true;
-        return false;
-      }
-      boolean flag = solve(p + up.charAt(0), up.substring(1), s);
-      boolean flag1 = solve(p, up.substring(1), s);
-     return flag || flag1;
+      if(up.isEmpty()) return s.equals(p) ? true : false;
+     return solve(p + up.charAt(0), up.substring(1), s) || solve(p, up.substring(1), s);
     }
     
 }
