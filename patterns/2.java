@@ -1,6 +1,16 @@
 class solve {
   public static void main(String[] args) {
     solve1(5,5);
+
+    /*
+
+     *
+     * *
+     * * *
+     * * * * 
+     * * * * * 
+     
+     */
   }
 
   static void solve(int n) {
