@@ -7,29 +7,29 @@ class omkay {
 
    static int minSetSize(int[] arr) {
     Map<Integer, Integer> map = new HashMap<>();
-    for (int i = 0; i < arr.length; i++) {
-      if (map.containsKey(arr[i]))
-        map.put(arr[i], map.get(arr[i]) + 1);
-      else
-        map.put(arr[i], 1);
-    }
-
-    int s = 0;
-    int c = arr.length;
-    while (true) {
-      int maxKey = 0;
-      int maxValue = 0;
-      for (int key : map.keySet()) {
-        if (map.get(key) > maxValue) {
-          maxKey = key;
-          maxValue = map.get(key);
+        for(int i = 0; i < arr.length; i++){
+            if(map.containsKey(arr[i])) map.put(arr[i], map.get(arr[i]) + 1);
+            else map.put(arr[i], 1);
         }
-      }
-      map.remove(maxKey);
-      c -= maxValue;
-      s++;
-      if (c <= (arr.length / 2))
+       
+        
+        int[] freq = new int[map.size()];
+        int p = 0;
+        for(int key: map.keySet()){
+            freq[p++] = map.get(key);
+        }
+        
+        Arrays.sort(freq);
+        
+        int c = arr.length;
+        int s = 0;
+     
+        for(int i = freq.length - 1; i >= 0; i--){
+            c -= freq[i];
+            s++;
+           
+            if(c <= (arr.length / 2)) break;
+        }
         return s;
-    }
   }
 }
