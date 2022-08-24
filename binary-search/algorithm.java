@@ -1,7 +1,7 @@
 class solve{
   public static void main(String[] args) {
     int[] arr = {2,3,5,9,14,16,18};
-    System.out.println(solve(0, arr.length - 1, 17, arr));
+    System.out.println(ceil(0, arr.length - 1, 17, arr));
   }
 
   static int solve(int s, int e, int t, int[] a){
@@ -10,5 +10,15 @@ class solve{
     if(a[mid] == t) return mid;
     else if(a[mid] > t) return solve(s, mid - 1, t, a); 
     else return solve(mid + 1, e, t, a);
+  }
+
+
+  // find ceil of target if not present
+  static int ceil(int s, int e, int t, int[] a){
+    if(s > e) return a[s];
+    int mid = s + (e - s) / 2;
+    if(a[mid] == t) return a[mid];
+    else if(a[mid] > t) return ceil(s, mid - 1, t, a); 
+    else return ceil(mid + 1, e, t, a);
   }
 }
