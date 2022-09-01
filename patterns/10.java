@@ -21,20 +21,22 @@ class solve {
   }
 
   static void solve(int n) {
-    int copy = 0;
+    
    for (int i = 0; i < 2 * n - 1; i++) {
-    for (int c = 0; c <= i && i < n && copy != n - 1; c++) {
+    for (int c = 0; c <= i && i < n; c++) {
       System.out.print("*");
-      copy = c;
-      if(copy == n - 1) System.out.println();
+    }
+    if(i == n - 1){ 
+      System.out.println();
+      continue;
     }
     
     
-    for (int j = 0; j < 2 * n - i - 2 && copy == n - 1; j++) {
+    for (int j = 0; j < 2 * n - i - 1 && i >= n; j++) {
       System.out.print("*");
     }
     
-    System.out.println();
+     System.out.println();
     
    }
   }
