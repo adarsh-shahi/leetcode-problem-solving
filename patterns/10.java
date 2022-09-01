@@ -23,17 +23,10 @@ class solve {
   static void solve(int n) {
     
    for (int i = 0; i < 2 * n - 1; i++) {
-    for (int c = 0; c <= i && i < n; c++) {
-      System.out.print("*");
-    }
-    if(i == n - 1){ 
-      System.out.println();
-      continue;
-    }
-    
-    
-    for (int j = 0; j < 2 * n - i - 1 && i >= n; j++) {
-      System.out.print("*");
+
+    int limit = i < n ? i + 1 : 2 * n - i - 1;
+    for (int c = 0; c < limit; c++) {
+      System.out.print("* ");
     }
     
      System.out.println();
